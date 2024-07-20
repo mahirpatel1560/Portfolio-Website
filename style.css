@@ -1,43 +1,118 @@
-html, body {
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 main {
-    background: #051736;
-    height: 100vh;
+  background: #051736;
+  height: 100vh;
 }
 
 .container {
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.glow {
+  color: aqua;
+  text-shadow: aqua 1px 0 10px;
 }
 
 nav {
-    position: sticky;
-    width: 100%;
-    top: 0;
-    background: rgba(0, 0, 0, 0.4);
-    color: white;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
 }
 
 nav .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav ul {
-    display: flex;
-    width: 40%;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  width: 40%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav li {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+nav a:hover,
+nav a:active {
+  color: aqua;
+  border-bottom: 0.2rem aqua solid;
 }
 
 section {
-    height: 100vh;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainText {
+  width: 50%;
+}
+
+.mainBtns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3%;
+}
+
+.mainBtns button {
+  border: 0;
+  border-radius: 100%;
+  border: 0.2rem outset aqua;
+  background: none;
+  color: aqua;
+  cursor: pointer;
+}
+
+.mainBtns button:first-child {
+  border-radius: 20px;
+  padding: 0 1rem;
+}
+
+.mainBtns button:hover {
+  border-color: white;
+}
+
+.mainImg {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+main img {
+  padding: 10% 0;
+  width: 80%;
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 255, 255, 0.6));
+  filter: drop-shadow(0px 0px 30px rgba(0, 255, 255, 0.6));
 }

@@ -7,42 +7,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-    <main>
-      <nav>
-        <div class="container">
-          <h2>Mahir <span class="glow">Patel</span></h2>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Skills</a></li>
-          </ul>
-        </div>
-      </nav>
+    <nav>
       <div class="container">
-        <div>
+        <h2>Mahir <span class="glow">Patel</span></h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#">Achievements</a></li>
+          <li><a href="#">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="home">
+      <div class="container">
+        <div class="mainText">
           <h1>Welcome</h1>
-          <h2>I'm a <span>Web Developer</span></h2>
+          <h2>I'm a <span class="glow">Web Developer</span></h2>
           <p>
-            My name is Mahir Patel and I'm a dedicated high school student with a
-            passion for computer engineering and hands-on experience in building and
-            working on PCs. I've excelled in AP classes while balancing
-            weightlifting and gym sessions. My involvement in the Robotics Club and
-            sports teams showcases my teamwork and leadership skills. Additionally,
-            I've helped manage a family-owned business and worked two jobs,
-            demonstrating my strong work ethic and time management abilities.
+            My name is Mahir Patel and I'm a dedicated high school student with
+            a passion for computer engineering and hands-on experience in
+            building and working on PCs. I've excelled in AP classes while
+            balancing weightlifting and gym sessions. My involvement in the
+            Robotics Club and sports teams showcases my teamwork and leadership
+            skills. Additionally, I've helped manage a family-owned business and
+            worked two jobs, demonstrating my strong work ethic and time
+            management abilities.
           </p>
-          <button>Contact</button>
-          <button><img src="icons/tiktok.svg" alt="Tiktok" /></button>
-          <button><img src="icons/github.svg" alt="Github" /></button>
+          <div class="mainBtns">
+            <button>Contact</button>
+            <button><img src="icons/tiktok.svg" alt="Tiktok" /></button>
+            <button><img src="icons/github.svg" alt="Github" /></button>
+          </div>
         </div>
-        <div>
-          <img src="icons/user.svg" alt="User">
+        <div class="mainImg">
+          <img src="icons/user.svg" alt="User" />
         </div>
       </div>
     </main>
-    <section>
+    <section id="projects">
       <div class="container">
         <h1>Projects</h1>
         <div>
@@ -50,25 +52,27 @@
           <p>
             The project showcases a comprehensive home automation system built
             using a Raspberry Pi. This system integrates smart devices such as
-            lights, thermostats, security cameras, voice assistants, outlet plugs,
-            and smart TVs, allowing centralized control through a user-friendly
-            interface. By leveraging Python and various IoT protocols, the project
-            includes automation scripts and voice command functionalities,
-            enhancing convenience and efficiency in managing home environments.
+            lights, thermostats, security cameras, voice assistants, outlet
+            plugs, and smart TVs, allowing centralized control through a
+            user-friendly interface. By leveraging Python and various IoT
+            protocols, the project includes automation scripts and voice command
+            functionalities, enhancing convenience and efficiency in managing
+            home environments.
           </p>
           <button><a href="#">Github</a></button>
         </div>
         <div>
           <h3>CoinClever</h3>
           <p>
-            CoinClever is your ultimate financial companion, designed to simplify
-            budgeting and tracking your expenses. With an intuitive interface and
-            powerful features, MoneyMap helps you stay on top of your finances by
-            providing real-time insights into your spending habits, setting and
-            monitoring budget goals, and visualizing your financial health.
-            Whether you're managing personal budgets or planning for future goals,
-            MoneyMap ensures you have the tools and knowledge to make informed
-            financial decisions and achieve financial stability.
+            CoinClever is your ultimate financial companion, designed to
+            simplify budgeting and tracking your expenses. With an intuitive
+            interface and powerful features, MoneyMap helps you stay on top of
+            your finances by providing real-time insights into your spending
+            habits, setting and monitoring budget goals, and visualizing your
+            financial health. Whether you're managing personal budgets or
+            planning for future goals, MoneyMap ensures you have the tools and
+            knowledge to make informed financial decisions and achieve financial
+            stability.
           </p>
           <img src="icons/coin-clever.svg" alt="Coin Clever" />
           <button><img src="icons/app-store.svg" alt="App Store" /></button>
@@ -79,13 +83,13 @@
           <p>
             Trivianator is your ultimate trivia challenge, designed to test your
             knowledge across a wide range of topics. Whether you're a history
-            buff, a science geek, or a pop culture aficionado, Trivianator offers
-            a fun and engaging way to compete with friends or challenge yourself.
-            With a variety of question formats, levels of difficulty, and exciting
-            leaderboards, Trivianator is perfect for anyone looking to sharpen
-            their trivia skills and enjoy a game full of surprises. Ready to
-            become a trivia master? Dive into Trivianator and let the knowledge
-            quest begin!
+            buff, a science geek, or a pop culture aficionado, Trivianator
+            offers a fun and engaging way to compete with friends or challenge
+            yourself. With a variety of question formats, levels of difficulty,
+            and exciting leaderboards, Trivianator is perfect for anyone looking
+            to sharpen their trivia skills and enjoy a game full of surprises.
+            Ready to become a trivia master? Dive into Trivianator and let the
+            knowledge quest begin!
           </p>
           <img src="icons/trivianator.svg" alt="Trivianator" />
           <button><img src="icons/app-store.svg" alt="App Store" /></button>
@@ -104,9 +108,7 @@
       </div>
     </section>
     <footer>
-      <div class="container">
-
-      </div>
+      <div class="container"></div>
     </footer>
   </body>
   <script src="script.js"></script>
