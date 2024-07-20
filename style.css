@@ -1,5 +1,43 @@
 html, body {
     margin: 0;
     padding: 0;
-    
+}
+
+main {
+    background: #051736;
+    height: 100vh;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+section {
+    height: 100vh;
 }
