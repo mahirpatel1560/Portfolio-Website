@@ -61,7 +61,7 @@ nav li {
   list-style-type: none;
 }
 
-nav a {
+a {
   color: white;
   text-decoration: none;
   transition: all 0.1s;
@@ -133,16 +133,63 @@ main .container {
   position: relative;
   text-align: center;
   color: white;
-  width: 50vw;
+  width: 70vh;
+  height: 70vh;
+  overflow: hidden;
 }
 
 .projectImg {
   height: 70vh;
+  transform: scale3d(1, 1, 1);
+  transition: all 0.2s;
+}
+
+.projectBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70vh;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: ease-in-out all 0.5s;
 }
 
 .projectContent {
   position: absolute;
-  top: 50%;
+  top: 10%;
+  width: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+}
+
+.project:hover .projectBackground {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project:hover .projectImg {
+  transform: scale3d(1.05, 1.05, 1);
+}
+
+.project button {
+  background: none;
+  color: aqua;
+  border-radius: 20px;
+  padding: 0 1rem;
+  border: 0.2rem solid aqua;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+  transition: all 0.2s;
+}
+
+.project a {
+  color: aqua;
+}
+
+.project button:hover {
+  border-color: white;
+  color: white;
 }
