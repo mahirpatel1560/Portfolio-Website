@@ -6,11 +6,14 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   color: white;
+  cursor: url(""), auto;
+  background: #111111;
+  scroll-behavior: smooth;
 }
 
-main {
-  background: #051736;
-  height: 100vh;
+main,
+section {
+  min-height: 100vh;
 }
 
 .container {
@@ -31,11 +34,20 @@ nav {
   top: 0;
   background: rgba(0, 0, 0, 0.4);
   color: white;
+  backdrop-filter: blur(15px);
 }
 
 nav .container {
   display: flex;
   justify-content: space-between;
+}
+
+nav h2 {
+  transition: all 0.3s;
+}
+
+nav h2:hover {
+  font-size: 1.7em;
 }
 
 nav ul {
@@ -87,17 +99,17 @@ main .container {
 }
 
 .mainBtns button {
-  border: 0;
-  border-radius: 100%;
-  border: 0.2rem outset aqua;
   background: none;
   color: aqua;
+  border: none;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
 }
 
 .mainBtns button:first-child {
   border-radius: 20px;
   padding: 0 1rem;
+  border: 0.2rem solid aqua;
 }
 
 .mainBtns button:hover {
@@ -110,9 +122,27 @@ main .container {
   justify-content: center;
 }
 
-main img {
+.mainImg img {
   padding: 10% 0;
   width: 80%;
   -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 255, 255, 0.6));
   filter: drop-shadow(0px 0px 30px rgba(0, 255, 255, 0.6));
+}
+
+.project {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 50vw;
+}
+
+.projectImg {
+  height: 70vh;
+}
+
+.projectContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
