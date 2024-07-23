@@ -11,9 +11,15 @@ body {
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary: rgb(160, 53, 182);
+}
+
 main,
-section {
+section,
+#projects {
   min-height: 100vh;
+  height: auto;
 }
 
 .container {
@@ -23,8 +29,8 @@ section {
 }
 
 .glow {
-  color: aqua;
-  text-shadow: aqua 1px 0 10px;
+  color: var(--primary);
+  text-shadow: var(--primary) 1px 0 10px;
 }
 
 nav {
@@ -69,8 +75,8 @@ a {
 
 nav a:hover,
 nav a:active {
-  color: aqua;
-  border-bottom: 0.2rem aqua solid;
+  color: var(--primary);
+  border-bottom: 0.2rem var(--primary) solid;
 }
 
 section {
@@ -100,7 +106,7 @@ main .container {
 
 .mainBtns button {
   background: none;
-  color: aqua;
+  color: var(--primary);
   border: none;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
@@ -109,7 +115,7 @@ main .container {
 .mainBtns button:first-child {
   border-radius: 20px;
   padding: 0 1rem;
-  border: 0.2rem solid aqua;
+  border: 0.2rem solid var(--primary);
 }
 
 .mainBtns button:hover {
@@ -125,71 +131,14 @@ main .container {
 .mainImg img {
   padding: 10% 0;
   width: 80%;
-  -webkit-filter: drop-shadow(0px 0px 30px rgba(0, 255, 255, 0.6));
-  filter: drop-shadow(0px 0px 30px rgba(0, 255, 255, 0.6));
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(160, 53, 182, 0.6));
+  filter: drop-shadow(0px 0px 30px rgba(160, 53, 182, 0.6));
 }
 
-.project {
-  position: relative;
-  text-align: center;
-  color: white;
-  width: 70vh;
-  height: 70vh;
-  overflow: hidden;
+#projects {
+  background: red;
 }
 
 .projectImg {
-  height: 70vh;
-  transform: scale3d(1, 1, 1);
-  transition: all 0.2s;
-}
-
-.projectBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 70vh;
-  height: 70vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  transition: ease-in-out all 0.5s;
-}
-
-.projectContent {
-  position: absolute;
-  top: 10%;
-  width: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.project:hover .projectBackground {
-  visibility: visible;
-  opacity: 1;
-}
-
-.project:hover .projectImg {
-  transform: scale3d(1.05, 1.05, 1);
-}
-
-.project button {
-  background: none;
-  color: aqua;
-  border-radius: 20px;
-  padding: 0 1rem;
-  border: 0.2rem solid aqua;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
-  transition: all 0.2s;
-}
-
-.project a {
-  color: aqua;
-}
-
-.project button:hover {
-  border-color: white;
-  color: white;
+  display: block;
 }
