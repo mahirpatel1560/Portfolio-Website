@@ -23,7 +23,7 @@ const group = new THREE.Group();
 
 // Material //
 const material = new THREE.MeshStandardMaterial({
-  color: "rgb(160, 53, 182)",
+  color: "rgb(255, 0, 0, 0.6)",
 });
 
 const geometry = new THREE.TorusKnotGeometry(10, 3, 200, 32);

@@ -12,7 +12,7 @@ body {
 }
 
 :root {
-  --primary: rgb(160, 53, 182);
+  --primary: rgb(255, 0, 0);
 }
 
 main,
@@ -131,8 +131,8 @@ main .container {
 .mainImg img {
   padding: 10% 0;
   width: 80%;
-  -webkit-filter: drop-shadow(0px 0px 30px rgba(160, 53, 182, 0.6));
-  filter: drop-shadow(0px 0px 30px rgba(160, 53, 182, 0.6));
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 0, 0, 0.6));
+  filter: drop-shadow(0px 0px 30px rgba(255, 0, 0, 0.6));
 }
 
 #projects {
