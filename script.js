@@ -1,7 +1,5 @@
 import * as THREE from "three";
-import { EffectComposer } from "EffectComposer";
-import { RenderPass } from "RenderPass";
-import { UnrealBloomPass } from "UnrealBloomPass";
+import splinetoolloader from "https://cdn.jsdelivr.net/npm/@splinetool/loader@1.9.3/+esm";
 
 const size = window.innerWidth * 0.4;
 
