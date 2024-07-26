@@ -6,7 +6,6 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   color: white;
-  cursor: url(""), auto;
   background: #111111;
   scroll-behavior: smooth;
 }
