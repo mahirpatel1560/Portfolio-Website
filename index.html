@@ -47,12 +47,7 @@
     <section id="projects">
       <h1>Projects</h1>
       <div class="container">
-        <div class="project" style="width: 33%">
-          <img
-            src="images/Raspberry PI.png"
-            alt="Raspberry PI"
-            class="projectImg"
-          />
+        <div class="project" style="grid-area: rasberry">
           <div class="projectBg">
             <div class="projectContent">
               <h3>Raspberry Pi Home Automation</h3>
@@ -69,12 +64,23 @@
             </div>
           </div>
         </div>
-        <div class="project" style="width: 66%">
-          <img
-            src="images/Coin Clever.jpg"
-            alt="Raspberry PI"
-            class="projectImg"
-          />
+        <div
+          class="project"
+          style="grid-area: pi; background-image: none; padding: 0"
+          id="PIvideo"
+        >
+          <video loop autoplay>
+            <source src="videos/RasberryPI.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div
+          class="project"
+          style="
+            grid-area: coin;
+            background-image: url('images/Coin Clever.jpg');
+          "
+        >
           <div class="projectBg">
             <div class="projectContent">
               <h3>Coin Clever</h3>
@@ -92,12 +98,13 @@
             </div>
           </div>
         </div>
-        <div class="project" style="width: 100%">
-          <img
-            src="images/Trivianator.jpg"
-            alt="Raspberry PI"
-            class="projectImg"
-          />
+        <div
+          class="project"
+          style="
+            grid-area: trivia;
+            background-image: url('images/Trivianator.jpg');
+          "
+        >
           <div class="projectBg">
             <div class="projectContent">
               <h3>Trivianator</h3>
