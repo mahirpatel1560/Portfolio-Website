@@ -144,6 +144,7 @@ main .container {
     "coin     coin"
     "trivia   trivia";
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1.8fr 1fr 1fr;
   gap: 4% 3%;
 }
 
@@ -152,6 +153,12 @@ main .container {
 }
 
 .project {
+  display: flex;
+
+  overflow: hidden;
+}
+
+.projectImg {
   background-image: url("images/Raspberry PI.png");
   background-size: cover;
   transform: scale3d(1, 1, 1);
@@ -163,6 +170,8 @@ main .container {
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
+  display: flex;
+  align-items: center;
   transition: all 0.2s;
 }
 
@@ -176,6 +185,10 @@ main .container {
   opacity: 1;
 }
 
-.project:hover {
+.project:hover .projectImg {
   transform: scale3d(1.05, 1.05, 1);
+}
+
+#PIvideo:hover {
+  transform: scale3d(1, 1, 1);
 }
