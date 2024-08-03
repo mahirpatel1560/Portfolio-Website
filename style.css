@@ -14,6 +14,10 @@ body {
   --primary: #ff2b2b;
 }
 
+section h1 {
+  text-align: center;
+}
+
 main,
 section,
 #projects {
@@ -190,4 +194,14 @@ main .container {
 
 #PIvideo:hover {
   transform: scale3d(1, 1, 1);
+}
+
+#skills .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  border: 3px solid red;
+  position: absolute;
 }
