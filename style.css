@@ -4,18 +4,27 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: sans-serif;
   color: white;
   background: #111111;
   scroll-behavior: smooth;
+  cursor: url("icons/dot.svg");
 }
 
 :root {
   --primary: #ff2b2b;
 }
 
+.mainImg {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 section h1 {
   text-align: center;
+  font-size: 3em;
+  margin-bottom: 50px;
+  padding-top: 100px;
 }
 
 main,
@@ -48,6 +57,8 @@ nav {
 nav .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 64px;
 }
 
 nav h2 {
@@ -196,12 +207,65 @@ main .container {
   transform: scale3d(1, 1, 1);
 }
 
+#skills {
+  height: auto;
+}
+
 #skills .container {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 
 .skill {
-  border: 3px solid red;
-  position: absolute;
+  width: 100%;
+  border-top: 1px rgb(53, 53, 53) solid;
+  border-bottom: 1px rgb(53, 53, 53) solid;
+}
+
+.skillContent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skillContent p,
+h2 {
+  margin: 0;
+}
+
+.skillContent h2 {
+  font-size: 5.6em;
+  line-height: 0.9em;
+  color: rgb(207, 207, 207);
+}
+
+#achievements .container {
+  display: flex;
+  gap: 50px;
+  justify-content: flex-start;
+}
+
+.achievement {
+  border: 2px solid rgb(53, 53, 53);
+  border-radius: 10px;
+  width: 30%;
+}
+
+.achievementContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: 10px;
+  text-align: center;
+}
+
+.achievement hr {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  color: #a0a0a0;
 }
