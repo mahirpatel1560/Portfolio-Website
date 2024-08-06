@@ -44,29 +44,35 @@ const child = document.querySelector("#ach5");
 
 const elems = [];
 
-for (let i = 1; i <= 6; i++) {
-  let elem = document.querySelector(`#ach${i}`).getBoundingClientRect();
+for (let i = 0; i <= 6; i++) {
+  let elem = document.querySelector(`#ach${i}`);
   elems.push({
-    left: elem.left,
-    right: elem.right,
+    left: elem.getBoundingClientRect().left,
+    right: elem.getBoundingClientRect().right,
+    elem: elem,
   });
 }
 
-let count = -1;
+let count = 0;
 
 right.onclick = () => {
+  count++;
+  count = Math.min(count, 5);
   parent.scrollTo({
-    left: elems[count + 1].left,
+    left: elems[count].left,
     behavior: "smooth",
   });
-
-  count = Math.min(count + 1, 4);
+  elems[count].elem.classList.remove("glowAch");
+  elems[count + 1].elem.classList.add("glowAch");
 };
 
 left.onclick = () => {
+  count--;
+  count = Math.max(count, 0);
   parent.scrollTo({
-    left: elems[count - 1].left,
+    left: elems[count].left,
     behavior: "smooth",
   });
-  count = Math.max(count - 1, 0);
+  elems[count + 2].elem.classList.remove("glowAch");
+  elems[count + 1].elem.classList.add("glowAch");
 };
